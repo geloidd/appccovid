@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Super Duper App</string>
+    <string name="tv_question">Ответьте на вопрос</string>
+    <string name="tv_option_one">Some_1</string>
+    <string name="tv_option_two">Some_2</string>
+    <string name="tv_option_three">Some_3</string>
+    <string name="btn_submit">Ответить</string>
+    <string name="category_1">Профиль</string>
+    <string name="category_2">Дневник</string>
+    <string name="category_3">Инфо</string>
+    <string name="category_4">Выход</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
+    <string name="sun">SUN</string>
+
+</resources>
