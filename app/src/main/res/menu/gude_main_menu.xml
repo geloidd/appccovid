@@ -9,7 +9,7 @@
             android:icon="@drawable/ic_person_info"/>
         <item android:title="@string/category_2"
             android:id="@+id/c_2"
-            android:icon="@drawable/ic_diary"/>
+            android:icon="@drawable/ic_diary" />
         <item android:title="@string/category_3"
             android:id="@+id/c_3"
             android:icon="@drawable/ic_info"/>

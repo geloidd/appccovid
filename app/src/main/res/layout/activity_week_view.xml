@@ -5,17 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WeekViewActivity"
-    android:orientation="vertical">
-
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navView"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        app:headerLayout="@layout/header_main_menu"
-        app:menu="@menu/gude_main_menu"/>
+    android:orientation="vertical"
+    tools:context=".WeekViewActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,7 +31,7 @@
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="wrap_content"
-            android:text="Dec 2021"
+            android:text="Feb 2021"
             android:textSize="20sp"
             android:textAlignment="center"
             android:textColor="@color/black"/>
@@ -67,55 +58,55 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/sun"
+            android:text="SUN"
+            android:textColor="@color/gray"
             android:textAlignment="center"
-            android:textColor="#757575"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="MON"
+            android:textColor="@color/gray"
             android:textAlignment="center"
-            android:textColor="#757575"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="TUE"
+            android:textColor="@color/gray"
             android:textAlignment="center"
-            android:textColor="#757575"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="WED"
+            android:textColor="@color/gray"
             android:textAlignment="center"
-            android:textColor="#757575"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="THUR"
+            android:textColor="@color/gray"
             android:textAlignment="center"
-            android:textColor="#757575"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="FRI"
+            android:textColor="@color/gray"
             android:textAlignment="center"
-            android:textColor="#757575"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="0dp"
@@ -153,4 +144,18 @@
         android:layout_height="0dp"
         android:layout_weight="5"/>
 
+
 </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
