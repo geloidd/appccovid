@@ -11,8 +11,12 @@
     <string name="category_4">Выход</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="prev">&lt;-</string>
+    <string name="next">-&gt;</string>
     <string name="back"><![CDATA[<-]]></string>
     <string name="forward"><![CDATA[->]]></string>
     <string name="sun">SUN</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
