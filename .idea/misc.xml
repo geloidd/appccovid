@@ -4,22 +4,28 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.13489583333333333" />
-        <entry key="..\:/Users/HYPERPC/AndroidStudioProjects/appccovid/app/src/main/res/layout/activity_event_edit.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/HYPERPC/AndroidStudioProjects/appccovid/app/src/main/res/layout/activity_guide.xml" value="0.1" />
-        <entry key="..\:/Users/HYPERPC/AndroidStudioProjects/appccovid/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/HYPERPC/AndroidStudioProjects/appccovid/app/src/main/res/layout/activity_main_2.xml" value="0.1" />
-        <entry key="..\:/Users/HYPERPC/AndroidStudioProjects/appccovid/app/src/main/res/layout/activity_sign_in.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/HYPERPC/AndroidStudioProjects/appccovid/app/src/main/res/layout/activity_week_view.xml" value="0.11094224924012158" />
-        <entry key="..\:/Users/HYPERPC/AndroidStudioProjects/appccovid/app/src/main/res/layout/calendar_cell.xml" value="0.11094224924012158" />
-        <entry key="..\:/Users/HYPERPC/AndroidStudioProjects/appccovid/app/src/main/res/layout/event_cell.xml" value="0.18" />
-        <entry key="..\:/Users/HYPERPC/AndroidStudioProjects/appccovid/app/src/main/res/layout/fragment_diary.xml" value="0.1" />
-        <entry key="..\:/Users/HYPERPC/AndroidStudioProjects/appccovid/app/src/main/res/menu/gude_main_menu.xml" value="0.36666666666666664" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.192481884057971" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14739583333333334" />
+        <entry key="app/src/main/res/drawable/default_option_border_bg.xml" value="0.14739583333333334" />
+        <entry key="app/src/main/res/drawable/ic_diary.xml" value="0.14739583333333334" />
+        <entry key="app/src/main/res/drawable/ic_exit_to_app.xml" value="0.14739583333333334" />
+        <entry key="app/src/main/res/drawable/ic_info.xml" value="0.14739583333333334" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.14739583333333334" />
+        <entry key="app/src/main/res/drawable/ic_person_info.xml" value="0.14739583333333334" />
+        <entry key="app/src/main/res/drawable/selected_option_border_bg.xml" value="0.14739583333333334" />
+        <entry key="app/src/main/res/layout/activity_diary.xml" value="0.13125" />
+        <entry key="app/src/main/res/layout/activity_event_edit.xml" value="0.13125" />
+        <entry key="app/src/main/res/layout/activity_guide.xml" value="0.2115036231884058" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.39614939500956003" />
+        <entry key="app/src/main/res/layout/activity_main_2.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_quiz_questions.xml" value="0.13125" />
+        <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.13125" />
+        <entry key="app/src/main/res/layout/activity_week_view.xml" value="0.2115036231884058" />
         <entry key="app/src/main/res/layout/calendar_cell.xml" value="0.25" />
         <entry key="app/src/main/res/layout/event_cell.xml" value="0.11145833333333334" />
         <entry key="app/src/main/res/layout/fragment_diary.xml" value="0.22958333521783122" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.192481884057971" />
         <entry key="app/src/main/res/layout/header_main_menu.xml" value="0.192481884057971" />
+        <entry key="app/src/main/res/layout/main_content.xml" value="0.13125" />
         <entry key="app/src/main/res/menu/gude_main_menu.xml" value="0.2015625" />
       </map>
     </option>

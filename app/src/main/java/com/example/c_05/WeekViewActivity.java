@@ -1,5 +1,8 @@
 package com.example.c_05;
 
+import static com.example.c_05.CalendarUtils.daysInWeekArray;
+import static com.example.c_05.CalendarUtils.monthYearFromDate;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -11,12 +14,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-import static codewithcal.au.calendarappexample.CalendarUtils.daysInMonthArray;
-import static codewithcal.au.calendarappexample.CalendarUtils.daysInWeekArray;
-import static codewithcal.au.calendarappexample.CalendarUtils.monthYearFromDate;
 
 public class WeekViewActivity extends AppCompatActivity implements CalendarAdapter.OnItemListener
 {

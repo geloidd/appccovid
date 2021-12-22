@@ -1,5 +1,6 @@
 package com.example.c_05
 
+import android.content.Intent
 import android.os.Bundle
 
 import android.view.MenuItem
@@ -32,8 +33,8 @@ class MainActivity : AppCompatActivity() {
 
             when (it.itemId) {
                 R.id.c_1 -> replaceFragment(ProfileFragment(), it.title.toString())
-                R.id.c_2 -> replaceFragment(DiaryFragment(), it.title.toString())
-//                R.id.c_2 -> startActivity(Intent(this, WeekViewActivity::class.java))
+                //R.id.c_2 -> Diary()
+                R.id.c_2 -> startActivity(Intent(this, MainActivity_2::class.java))
                 R.id.c_3 -> replaceFragment(DiaryFragment(), it.title.toString())
                 R.id.c_4 -> finish()
 
@@ -41,6 +42,10 @@ class MainActivity : AppCompatActivity() {
             true
         }
     }
+//    private fun Diary() {
+//        val i = Intent(this, MainActivity_2::class.java)
+//        startActivity(i)
+//    }
 
     private fun replaceFragment(fragment: Fragment, title: String){
 

@@ -25,7 +25,7 @@ public class MainActivity_2 extends AppCompatActivity implements CalendarAdapter
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_2);
         initWidgets();
         CalendarUtils.selectedDate = LocalDate.now();
         setMonthView();

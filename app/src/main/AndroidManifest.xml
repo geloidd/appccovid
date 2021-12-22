@@ -9,17 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.C_05">
-        <activity
-            android:name=".DiaryAct"
-            android:exported="true" />
+<!--        <activity-->
+<!--            android:name=".DiaryAct"-->
+<!--            android:exported="true" />-->
         <activity
             android:name=".EventEditActivity"
             android:exported="false" />
         <activity
             android:name=".WeekViewActivity"
-            android:exported="false" /> <!-- <activity -->
-        <!-- android:name=".MainActivity2" -->
-        <!-- android:exported="false" /> -->
+            android:exported="false" />
+        <activity
+         android:name=".MainActivity_2"
+         android:exported="false" />
         <activity
             android:name=".Guide"
             android:exported="false" />
@@ -31,11 +32,10 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity_2" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
