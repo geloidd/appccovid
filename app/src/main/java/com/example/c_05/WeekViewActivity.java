@@ -3,33 +3,56 @@ package com.example.c_05;
 import static com.example.c_05.CalendarUtils.daysInWeekArray;
 import static com.example.c_05.CalendarUtils.monthYearFromDate;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.google.android.material.navigation.NavigationView;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 
 
-public class WeekViewActivity extends AppCompatActivity implements CalendarAdapter.OnItemListener
-{
+public class WeekViewActivity extends AppCompatActivity implements CalendarAdapter.OnItemListener, NavigationView.OnNavigationItemSelectedListener {
     private TextView monthYearText;
     private RecyclerView calendarRecyclerView;
     private ListView eventListView;
+    DrawerLayout drawerLayout;
+    ActionBarDrawerToggle toggle;
+    NavigationView navView_diary;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_week_view);
+        navView_diary=findViewById(R.id.navView_diary);
+
+        navView_diary.setNavigationItemSelectedListener(this);
+
+        drawerLayout=findViewById(R.id.drawerLayout);
+        toggle=new ActionBarDrawerToggle(this,drawerLayout,R.string.open,R.string.close);
+
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        initWidgets();
+        CalendarUtils.selectedDate = LocalDate.now();
         initWidgets();
         setWeekView();
     }
@@ -90,5 +113,38 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
     public void newEventAction(View view)
     {
         startActivity(new Intent(this, EventEditActivity.class));
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (toggle.onOptionsItemSelected(item)){
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        if (menuItem.getItemId()==R.id.c_1){
+            intent=new Intent(this,ProfileFragment.class);
+            finish();
+            startActivity(intent);
+        }
+        if (menuItem.getItemId()==R.id.c_2){
+            intent=new Intent(this,MainActivity_2.class);
+            finish();
+            startActivity(intent);
+        }
+        if (menuItem.getItemId()==R.id.c_3){
+            intent=new Intent(this, InfoFragment.class);
+            finish();
+            startActivity(intent);
+        }
+        if (menuItem.getItemId()==R.id.c_4){
+            finish();
+            intent=new Intent(this,SignInAct.class);
+            finish();
+            startActivity(intent);
+        }
+        return false;
     }
 }

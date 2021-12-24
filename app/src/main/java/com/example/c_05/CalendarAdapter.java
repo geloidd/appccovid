@@ -2,6 +2,7 @@ package com.example.c_05;
 
 import android.graphics.Color;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -60,5 +61,7 @@ class CalendarAdapter extends RecyclerView.Adapter<CalendarViewHolder>
     public interface  OnItemListener
     {
         void onItemClick(int position, LocalDate date);
+
+        boolean onNavigationItemSelected(@NonNull MenuItem menuItem);
     }
 }

@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
@@ -33,19 +32,14 @@ class MainActivity : AppCompatActivity() {
 
             when (it.itemId) {
                 R.id.c_1 -> replaceFragment(ProfileFragment(), it.title.toString())
-                //R.id.c_2 -> Diary()
-                R.id.c_2 -> startActivity(Intent(this, MainActivity_2::class.java))
-                R.id.c_3 -> replaceFragment(DiaryFragment(), it.title.toString())
+                R.id.c_2 -> startActivity(Intent(this, WeekViewActivity::class.java))
+                //R.id.c_3 -> replaceFragment(DiaryFragment(), it.title.toString())
                 R.id.c_4 -> finish()
 
             }
             true
         }
     }
-//    private fun Diary() {
-//        val i = Intent(this, MainActivity_2::class.java)
-//        startActivity(i)
-//    }
 
     private fun replaceFragment(fragment: Fragment, title: String){
 
@@ -62,6 +56,5 @@ class MainActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-
 
 }
