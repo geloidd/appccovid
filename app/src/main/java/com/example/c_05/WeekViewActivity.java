@@ -130,7 +130,7 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
             startActivity(intent);
         }
         if (menuItem.getItemId()==R.id.c_2){
-            intent=new Intent(this,MainActivity_2.class);
+            intent=new Intent(this,WeekViewActivity.class);
             finish();
             startActivity(intent);
         }

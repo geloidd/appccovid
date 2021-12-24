@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             when (it.itemId) {
                 R.id.c_1 -> replaceFragment(ProfileFragment(), it.title.toString())
                 R.id.c_2 -> startActivity(Intent(this, WeekViewActivity::class.java))
-                //R.id.c_3 -> replaceFragment(DiaryFragment(), it.title.toString())
+                R.id.c_3 -> replaceFragment(InfoFragment(), it.title.toString())
                 R.id.c_4 -> finish()
 
             }
