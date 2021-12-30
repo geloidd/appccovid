@@ -11,9 +11,11 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,6 +42,7 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_week_view);
         navView_diary=findViewById(R.id.navView_diary);
+
 
         navView_diary.setNavigationItemSelectedListener(this);
 
@@ -88,6 +91,7 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
         CalendarUtils.selectedDate = CalendarUtils.selectedDate.plusWeeks(1);
         setWeekView();
     }
+
 
     @Override
     public void onItemClick(int position, LocalDate date)
@@ -147,4 +151,10 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
         }
         return false;
     }
+
+    public void doneTask(View view) {
+        intent=new Intent(this,MainActivity.class);
+        startActivity(intent); ////!!!!!!!!!!!!!!
+    }
+
 }
