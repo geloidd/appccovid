@@ -1,14 +1,14 @@
 package com.example.c_05;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.time.LocalTime;
+import androidx.appcompat.app.AppCompatActivity;
 
+import java.time.LocalTime;
 public class EventEditActivity extends AppCompatActivity
 {
     private EditText eventNameET;
@@ -39,6 +39,7 @@ public class EventEditActivity extends AppCompatActivity
         String eventName = eventNameET.getText().toString();
         Event newEvent = new Event(eventName, CalendarUtils.selectedDate, time);
         Event.eventsList.add(newEvent);
+
         finish();
     }
 }

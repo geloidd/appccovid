@@ -6,5 +6,6 @@ data class Question(
     val optionOne: Map<String, Int>,
 //    val optionOne: String,
     val optionTwo: String,
-    val optionThree: String,
+
+
 )

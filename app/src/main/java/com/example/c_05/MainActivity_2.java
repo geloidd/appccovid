@@ -113,7 +113,7 @@ public class MainActivity_2 extends AppCompatActivity implements CalendarAdapter
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         if (menuItem.getItemId()==R.id.c_1){
-            intent=new Intent(this,ProfileFragment.class);
+            intent=new Intent(this,ProfileActicity.class);
             finish();
             startActivity(intent);
         }

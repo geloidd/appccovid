@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
             it.isChecked = true
 
             when (it.itemId) {
-                R.id.c_1 -> replaceFragment(ProfileFragment(), it.title.toString())
+                R.id.c_1 -> startActivity(Intent(this, ProfileActicity::class.java))
                 R.id.c_2 -> startActivity(Intent(this, WeekViewActivity::class.java))
                 R.id.c_3 -> replaceFragment(InfoFragment(), it.title.toString())
                 R.id.c_4 -> finish()

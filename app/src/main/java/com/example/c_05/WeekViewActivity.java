@@ -3,23 +3,20 @@ package com.example.c_05;
 import static com.example.c_05.CalendarUtils.daysInWeekArray;
 import static com.example.c_05.CalendarUtils.monthYearFromDate;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -34,6 +31,7 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
     NavigationView navView_diary;
+    Button doneTaskButton;
     Intent intent;
 
     @Override
@@ -117,6 +115,7 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
     public void newEventAction(View view)
     {
         startActivity(new Intent(this, EventEditActivity.class));
+
     }
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
@@ -129,7 +128,7 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         if (menuItem.getItemId()==R.id.c_1){
-            intent=new Intent(this,ProfileFragment.class);
+            intent=new Intent(this,ProfileActicity.class);
             finish();
             startActivity(intent);
         }
@@ -152,9 +151,20 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
         return false;
     }
 
-    public void doneTask(View view) {
-        intent=new Intent(this,MainActivity.class);
-        startActivity(intent); ////!!!!!!!!!!!!!!
-    }
+//    public void doneTask(Button doneTaskButton) {
+//        intent=new Intent(this,MainActivity.class);
+//        startActivity(intent); ////!!!!!!!!!!!!!!
+//
+//    }
 
+    public void doneTask() {
+        if (eventListView != null){
+
+        doneTaskButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });}
+    }
 }

@@ -27,7 +27,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
 
         tv_option_one.setOnClickListener(this)
         tv_option_two.setOnClickListener(this)
-        tv_option_three.setOnClickListener(this)
+//        tv_option_three.setOnClickListener(this)
         btn_submit.setOnClickListener(this)
 
     }
@@ -38,7 +38,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         defaultOptionsView()
 
         if(mCurrentPosition != mQuestionList!!.size){
-            btn_submit.text = "SUBMIT"
+            btn_submit.text = "Подтвердить"
         }
 
         progressBar.progress = mCurrentPosition
@@ -48,14 +48,13 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
 //        tv_option_one.text = question.optionOne
         tv_option_one.text = question.optionOne.keys.elementAt(0)
         tv_option_two.text = question.optionTwo
-        tv_option_three.text = question.optionThree
+//        tv_option_three.text = question.optionThree
     }
 
     private fun defaultOptionsView() {
         val options = ArrayList<TextView>()
         options.add(0, tv_option_one)
         options.add(1, tv_option_two)
-        options.add(2, tv_option_three)
 
         for (option in options) {
             option.setTextColor(Color.parseColor("#757575"))
@@ -78,9 +77,9 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
             R.id.tv_option_two -> {
                 selectedOptionView(tv_option_two, 2)
             }
-            R.id.tv_option_three -> {
-                selectedOptionView(tv_option_three, 3)
-            }
+//            R.id.tv_option_three -> {
+//                selectedOptionView(tv_option_three, 3)
+//            }
             R.id.btn_submit -> {
                 if (mSelectedOptionsPosition == 0) {
                     mCurrentPosition++
@@ -92,7 +91,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                             Toast.makeText(this,
                             "Тест пройден!${ballSum}",
                             Toast.LENGTH_SHORT).show()
-                            val i = Intent(this, MainActivity::class.java)
+                            val i = Intent(this, Notify::class.java)
                             startActivity(i)
                             finish()
                         }

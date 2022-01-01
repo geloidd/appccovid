@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Super Duper App</string>
+    <string name="app_name">Nose Hero</string>
     <string name="tv_question">Ответьте на вопрос</string>
     <string name="tv_option_one">Some_1</string>
     <string name="tv_option_two">Some_2</string>

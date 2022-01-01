@@ -50,7 +50,7 @@ class SignInAct : AppCompatActivity() {
     private fun getClient(): GoogleSignInClient {
         val gso = GoogleSignInOptions
             .Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken(getString(R.string.default_web_client_id))
+            .requestIdToken("default_web_client_id")
             .requestEmail()
             .build()
 
@@ -78,11 +78,9 @@ class SignInAct : AppCompatActivity() {
             val i = Intent(this, MainActivity::class.java)
             startActivity(i)
 //            finish()
-        }else{
+        } else {
             val i = Intent(this, QuizQuestionsActivity::class.java)
             startActivity(i)
         }
     }
-
-
 }
